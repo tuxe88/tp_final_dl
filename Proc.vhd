@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
--- Realizado por la catedra  Dise駉 L骻ico (UNTREF) en 2015
+-- Realizado por la catedra  Dise帽o L贸gico (UNTREF) en 2015
 -- Tiene como objeto brindarle a los alumnos un template del procesador requerido
--- Profesores Mart韓 V醶quez - Lucas Leiva
+-- Profesores Mart铆n V谩zquez - Lucas Leiva
 ----------------------------------------------------------------------------------
 
 library IEEE;
@@ -17,7 +17,7 @@ end Proc;
 architecture Beh_Proc of Proc is
 
 -- ================
--- Declaraci髇 de los componentes utilziados
+-- Declaraci贸n de los componentes utilziados
 
 component regs 
     Port ( clk : in  std_logic;
@@ -29,9 +29,12 @@ component regs
            dout : out  std_logic_vector (7 downto 0));
 end component;
 
-component alu port ( op: in  std_logic_vector(3 downto 0);
-           a,b : in  std_logic_vector (7 downto 0);
-           s : out  std_logic_vector (7 downto 0));
+-- ================
+-- alu modificada, orden de las se帽ales y tama帽o
+
+component alu port (a,b : in  std_logic_vector (7 downto 0);
+			op: in  std_logic_vector(2 downto 0);
+			s : out  std_logic_vector (7 downto 0));
 end component;
 
 component rom_prog port (addr : in  std_logic_vector (6 downto 0);
@@ -51,7 +54,7 @@ end component;
 -- ================
 
 -- ================
--- declaraci髇 de se馻les usadas 
+-- declaraci贸n de se帽ales usadas 
 
 -- Banco de registros
 signal we: std_logic; -- senal para escribir en el banco de registro 
@@ -68,28 +71,28 @@ begin
 -- Banco de registros
 eregs:  regs Port map (clk => clk, rst => rst, we => we, 
 								rd => rd, rs => rs, 
-								din =>, dout => ); -- hay que cpmpletar esta instanciaci髇
+								din =>, dout => ); -- hay que cpmpletar esta instanciaci贸n
 -- La ALU
 eAlu: alu port map ();
 
 -- La ROM de programa
 eROM_Prog: rom_prog port map ();
 
--- El decodificador de la instrucci髇
+-- El decodificador de la instrucci贸n
 eDecode: decode port map ();
 
 -- ================
 
 
 -- ================
--- Descripci髇 de mux que funciona como "bus"
+-- Descripci贸n de mux que funciona como "bus"
 -- controlado por bus_sel
 
 -- ================
 
 
 -- ================
--- Descripci髇 de los almacenamientos
+-- Descripci贸n de los almacenamientos
 -- Los almacenamientos que se deben decribir aca son: 
 -- <reg_a> 8 bits
 -- <reg_out> de 8 bits

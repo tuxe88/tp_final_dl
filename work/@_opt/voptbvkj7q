@@ -1,0 +1,323 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech_10.0d\examples
+T_opt
+Z1 VZc=FK4:KGEPl6aO3EB:DA2
+Z2 04 6 8 work alu_tb test_alu 1
+Z3 =1-0800270b0bd8-5de51df7-25c-7e4
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;10.0d;49
+Z7 dC:\modeltech_10.0d\examples
+Ealu
+Z8 w1575295639
+Z9 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+Z10 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z11 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z12 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z13 dC:\tp_final_dl
+Z14 8C:/tp_final_dl/alu.vhd
+Z15 FC:/tp_final_dl/alu.vhd
+l0
+L6
+Z16 V?ibFH>6REDP9PY8j_=MZg0
+Z17 OE;C;10.0d;49
+32
+Z18 !s108 1575296475.811000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/alu.vhd|
+Z20 !s107 C:/tp_final_dl/alu.vhd|
+Z21 o-work work -2002 -explicit
+Z22 tExplicit 1
+Z23 !s100 XjQ_P2lL5L`oD_9HD>ko;3
+Abehavioral
+R9
+R10
+R11
+R12
+Z24 DEx4 work 3 alu 0 22 ?ibFH>6REDP9PY8j_=MZg0
+l15
+L13
+Z25 VBVlAl6gAZBO@Q`AWH^3hd0
+R17
+32
+R18
+R19
+R20
+R21
+R22
+Z26 !s100 LBeE=77=o3DzGJQ@P8PA=1
+Ealu_tb
+R8
+R11
+R12
+R13
+Z27 8C:/tp_final_dl/alu_testbench.vhd
+Z28 FC:/tp_final_dl/alu_testbench.vhd
+l0
+L6
+Z29 VfnfDG_3d8T`oRYk3l=GRb3
+R17
+32
+Z30 !s108 1575296475.866000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/alu_testbench.vhd|
+Z32 !s107 C:/tp_final_dl/alu_testbench.vhd|
+R21
+R22
+Z33 !s100 >4=:aXiZlYEB3SNNCmJG71
+Atest_alu
+R11
+R12
+Z34 DEx4 work 6 alu_tb 0 22 fnfDG_3d8T`oRYk3l=GRb3
+l25
+L10
+Z35 VFh@H;@ZK4A7d@`;S3Dzl^1
+R17
+32
+R30
+R31
+R32
+R21
+R22
+Z36 !s100 IT0`9JUXmSMVlXhnh0Q1a2
+Ebus_selector
+R8
+Z37 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R10
+R11
+R12
+R13
+Z38 8C:/tp_final_dl/bus_selector.vhd
+Z39 FC:/tp_final_dl/bus_selector.vhd
+l0
+L6
+Z40 VZ1TZ0kZ^M]XYZZ81LhH?K0
+R17
+32
+Z41 !s108 1575296475.922000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/bus_selector.vhd|
+Z43 !s107 C:/tp_final_dl/bus_selector.vhd|
+R21
+R22
+Z44 !s100 I4Tf?<YEMhi[6o;358mOK3
+Abehavioral
+R37
+R10
+R11
+R12
+Z45 DEx4 work 12 bus_selector 0 22 Z1TZ0kZ^M]XYZZ81LhH?K0
+l16
+L14
+Z46 V@]8EE9H20j1BS?SNbUU_?1
+R17
+32
+R41
+R42
+R43
+R21
+R22
+Z47 !s100 G9C:zcX9FgTLGngO5>?4?0
+Edecode
+R8
+R37
+R10
+R11
+R12
+R13
+Z48 8C:/tp_final_dl/decode.vhd
+Z49 FC:/tp_final_dl/decode.vhd
+l0
+L6
+Z50 V1L9V6_PYmZiZbh<A`D`<03
+R17
+32
+Z51 !s108 1575296475.949000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/decode.vhd|
+Z53 !s107 C:/tp_final_dl/decode.vhd|
+R21
+R22
+Z54 !s100 NM`^EmgadlU?OcH[DFNc?2
+Abehavioral
+R37
+R10
+R11
+R12
+Z55 DEx4 work 6 decode 0 22 1L9V6_PYmZiZbh<A`D`<03
+l17
+L15
+Z56 VjaX9k@X56m:4U;8d69GKm2
+R17
+32
+R51
+R52
+R53
+R21
+R22
+Z57 !s100 H7X`cMXWHBfi0DGdFIZX33
+Eir
+R8
+R10
+R37
+R11
+R12
+R13
+Z58 8C:/tp_final_dl/ir.vhd
+Z59 FC:/tp_final_dl/ir.vhd
+l0
+L6
+Z60 V5W2R[8WJdG9k47:^P9HZg3
+R17
+32
+Z61 !s108 1575296476.005000
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/ir.vhd|
+Z63 !s107 C:/tp_final_dl/ir.vhd|
+R21
+R22
+Z64 !s100 CzZengf@[6MQPTOhkzEg]1
+Abeh_proc
+R10
+R37
+R11
+R12
+Z65 DEx4 work 2 ir 0 22 5W2R[8WJdG9k47:^P9HZg3
+l16
+L14
+Z66 V[6n^MPz6l4AUXoQ?WUSFQ1
+R17
+32
+R61
+R62
+R63
+R21
+R22
+Z67 !s100 ^H1W7`QUDz0G0K?9nYbfj0
+Epc
+R8
+R10
+R37
+R11
+R12
+R13
+Z68 8C:/tp_final_dl/pc.vhd
+Z69 FC:/tp_final_dl/pc.vhd
+l0
+L5
+Z70 VK>3b3i=zPE7QdnmVRC8if3
+R17
+32
+Z71 !s108 1575296476.032000
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/pc.vhd|
+Z73 !s107 C:/tp_final_dl/pc.vhd|
+R21
+R22
+Z74 !s100 BL9^U7o@XY__H1NWD`ijQ2
+Abeh_proc
+R10
+R37
+R11
+R12
+Z75 DEx4 work 2 pc 0 22 K>3b3i=zPE7QdnmVRC8if3
+l13
+L10
+Z76 V;R61FNM<aJRlIh<1goKMe1
+R17
+32
+R71
+R72
+R73
+R21
+R22
+Z77 !s100 Cl1zHo;K6:cQAb8_ei<EH1
+Epc_tb
+R8
+R10
+R37
+R11
+R12
+R13
+Z78 8C:/tp_final_dl/pc_testbench.vhd
+Z79 FC:/tp_final_dl/pc_testbench.vhd
+l0
+L11
+Z80 V[0@^HH;5KL>8>02]V9n6z3
+R17
+32
+Z81 !s108 1575296476.074000
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/pc_testbench.vhd|
+Z83 !s107 C:/tp_final_dl/pc_testbench.vhd|
+R21
+R22
+Z84 !s100 39JYh9<z9_E=SYJkeQ]mJ3
+Atp_final
+R10
+R37
+R11
+R12
+Z85 DEx4 work 5 pc_tb 0 22 [0@^HH;5KL>8>02]V9n6z3
+l32
+L15
+Z86 V^BC;AMSz1`Ae6PV7lPJBD2
+R17
+32
+R81
+R82
+R83
+R21
+R22
+Z87 !s100 OG_>>fAaYn>>>@QAlf_Rm0
+Eproc
+R8
+R11
+R12
+R13
+Z88 8C:/tp_final_dl/Proc.vhd
+Z89 FC:/tp_final_dl/Proc.vhd
+l0
+L10
+Z90 V@[e:EPQaMo::hALjMH7[:3
+R17
+32
+R21
+R22
+Z91 !s100 kHeH>KhaDHa9MITe81_3=3
+Z92 !s108 1575296476.115000
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/Proc.vhd|
+Z94 !s107 C:/tp_final_dl/Proc.vhd|
+Erom_prog
+R8
+R37
+R10
+R11
+R12
+R13
+Z95 8C:/tp_final_dl/rom_prog.vhd
+Z96 FC:/tp_final_dl/rom_prog.vhd
+l0
+L6
+Z97 VY@TEShI5^XUiU=Q`c^[R81
+R17
+32
+Z98 !s108 1575296482.892000
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/rom_prog.vhd|
+Z100 !s107 C:/tp_final_dl/rom_prog.vhd|
+R21
+R22
+Z101 !s100 DVJAamZ=8;1l]F[cVl5S;1
+Abehavioral
+R37
+R10
+R11
+R12
+Z102 DEx4 work 8 rom_prog 0 22 Y@TEShI5^XUiU=Q`c^[R81
+l33
+L11
+Z103 V2MJLCn`4gMAA428damlz61
+R17
+32
+R98
+R99
+R100
+R21
+R22
+Z104 !s100 [`<0L2BK@`@o::8RWN>I40

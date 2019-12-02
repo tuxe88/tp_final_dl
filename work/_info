@@ -1,0 +1,376 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech_10.0d\examples
+T_opt
+Z1 VZc=FK4:KGEPl6aO3EB:DA2
+Z2 04 6 8 work alu_tb test_alu 1
+Z3 =1-0800270b0bd8-5de51df7-25c-7e4
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;10.0d;49
+Z7 dC:\modeltech_10.0d\examples
+T_opt1
+Z8 V^@?17;5jC;;=ibUkORR=H1
+Z9 04 5 8 work pc_tb tp_final 1
+Z10 =1-0800270b0bd8-5de51f0e-33e-ca8
+R4
+Z11 n@_opt1
+R6
+R7
+T_opt2
+V<<fLjG<ShJZ1z]QNU:0kL0
+Z12 04 11 8 work rom_prog_tb tp_final 1
+Z13 =1-0800270b0bd8-5de5612e-31e-8d0
+R4
+Z14 n@_opt2
+R6
+R7
+Ealu
+Z15 w1575295639
+Z16 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+Z17 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z18 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z19 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z20 dC:\tp_final_dl
+Z21 8C:/tp_final_dl/alu.vhd
+Z22 FC:/tp_final_dl/alu.vhd
+l0
+L6
+Z23 V?ibFH>6REDP9PY8j_=MZg0
+Z24 OE;C;10.0d;49
+32
+Z25 !s108 1575296475.811000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/alu.vhd|
+Z27 !s107 C:/tp_final_dl/alu.vhd|
+Z28 o-work work -2002 -explicit
+Z29 tExplicit 1
+Z30 !s100 XjQ_P2lL5L`oD_9HD>ko;3
+Abehavioral
+R16
+R17
+R18
+R19
+Z31 DEx4 work 3 alu 0 22 ?ibFH>6REDP9PY8j_=MZg0
+l15
+L13
+Z32 VBVlAl6gAZBO@Q`AWH^3hd0
+R24
+32
+R25
+R26
+R27
+R28
+R29
+Z33 !s100 LBeE=77=o3DzGJQ@P8PA=1
+Ealu_tb
+R15
+R18
+R19
+R20
+Z34 8C:/tp_final_dl/alu_testbench.vhd
+Z35 FC:/tp_final_dl/alu_testbench.vhd
+l0
+L6
+Z36 VfnfDG_3d8T`oRYk3l=GRb3
+R24
+32
+Z37 !s108 1575296513.720000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/alu_testbench.vhd|
+Z39 !s107 C:/tp_final_dl/alu_testbench.vhd|
+R28
+R29
+Z40 !s100 >4=:aXiZlYEB3SNNCmJG71
+Atest_alu
+R18
+R19
+Z41 DEx4 work 6 alu_tb 0 22 fnfDG_3d8T`oRYk3l=GRb3
+l25
+L10
+Z42 VFh@H;@ZK4A7d@`;S3Dzl^1
+R24
+32
+R37
+R38
+R39
+R28
+R29
+Z43 !s100 IT0`9JUXmSMVlXhnh0Q1a2
+Ebus_selector
+R15
+Z44 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R17
+R18
+R19
+R20
+Z45 8C:/tp_final_dl/bus_selector.vhd
+Z46 FC:/tp_final_dl/bus_selector.vhd
+l0
+L6
+Z47 VZ1TZ0kZ^M]XYZZ81LhH?K0
+R24
+32
+Z48 !s108 1575296475.922000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/bus_selector.vhd|
+Z50 !s107 C:/tp_final_dl/bus_selector.vhd|
+R28
+R29
+Z51 !s100 I4Tf?<YEMhi[6o;358mOK3
+Abehavioral
+R44
+R17
+R18
+R19
+Z52 DEx4 work 12 bus_selector 0 22 Z1TZ0kZ^M]XYZZ81LhH?K0
+l16
+L14
+Z53 V@]8EE9H20j1BS?SNbUU_?1
+R24
+32
+R48
+R49
+R50
+R28
+R29
+Z54 !s100 G9C:zcX9FgTLGngO5>?4?0
+Edecode
+R15
+R44
+R17
+R18
+R19
+R20
+Z55 8C:/tp_final_dl/decode.vhd
+Z56 FC:/tp_final_dl/decode.vhd
+l0
+L6
+Z57 V1L9V6_PYmZiZbh<A`D`<03
+R24
+32
+Z58 !s108 1575296475.949000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/decode.vhd|
+Z60 !s107 C:/tp_final_dl/decode.vhd|
+R28
+R29
+Z61 !s100 NM`^EmgadlU?OcH[DFNc?2
+Abehavioral
+R44
+R17
+R18
+R19
+Z62 DEx4 work 6 decode 0 22 1L9V6_PYmZiZbh<A`D`<03
+l17
+L15
+Z63 VjaX9k@X56m:4U;8d69GKm2
+R24
+32
+R58
+R59
+R60
+R28
+R29
+Z64 !s100 H7X`cMXWHBfi0DGdFIZX33
+Eir
+R15
+R17
+R44
+R18
+R19
+R20
+Z65 8C:/tp_final_dl/ir.vhd
+Z66 FC:/tp_final_dl/ir.vhd
+l0
+L6
+Z67 V5W2R[8WJdG9k47:^P9HZg3
+R24
+32
+Z68 !s108 1575296476.005000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/ir.vhd|
+Z70 !s107 C:/tp_final_dl/ir.vhd|
+R28
+R29
+Z71 !s100 CzZengf@[6MQPTOhkzEg]1
+Abeh_proc
+R17
+R44
+R18
+R19
+Z72 DEx4 work 2 ir 0 22 5W2R[8WJdG9k47:^P9HZg3
+l16
+L14
+Z73 V[6n^MPz6l4AUXoQ?WUSFQ1
+R24
+32
+R68
+R69
+R70
+R28
+R29
+Z74 !s100 ^H1W7`QUDz0G0K?9nYbfj0
+Epc
+R15
+R17
+R44
+R18
+R19
+R20
+Z75 8C:/tp_final_dl/pc.vhd
+Z76 FC:/tp_final_dl/pc.vhd
+l0
+L5
+Z77 VK>3b3i=zPE7QdnmVRC8if3
+R24
+32
+Z78 !s108 1575296476.032000
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/pc.vhd|
+Z80 !s107 C:/tp_final_dl/pc.vhd|
+R28
+R29
+Z81 !s100 BL9^U7o@XY__H1NWD`ijQ2
+Abeh_proc
+R17
+R44
+R18
+R19
+Z82 DEx4 work 2 pc 0 22 K>3b3i=zPE7QdnmVRC8if3
+l13
+L10
+Z83 V;R61FNM<aJRlIh<1goKMe1
+R24
+32
+R78
+R79
+R80
+R28
+R29
+Z84 !s100 Cl1zHo;K6:cQAb8_ei<EH1
+Epc_tb
+R15
+R17
+R44
+R18
+R19
+R20
+Z85 8C:/tp_final_dl/pc_testbench.vhd
+Z86 FC:/tp_final_dl/pc_testbench.vhd
+l0
+L11
+Z87 V[0@^HH;5KL>8>02]V9n6z3
+R24
+32
+Z88 !s108 1575296476.074000
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/pc_testbench.vhd|
+Z90 !s107 C:/tp_final_dl/pc_testbench.vhd|
+R28
+R29
+Z91 !s100 39JYh9<z9_E=SYJkeQ]mJ3
+Atp_final
+R17
+R44
+R18
+R19
+Z92 DEx4 work 5 pc_tb 0 22 [0@^HH;5KL>8>02]V9n6z3
+l32
+L15
+Z93 V^BC;AMSz1`Ae6PV7lPJBD2
+R24
+32
+R88
+R89
+R90
+R28
+R29
+Z94 !s100 OG_>>fAaYn>>>@QAlf_Rm0
+Eproc
+R15
+R18
+R19
+R20
+Z95 8C:/tp_final_dl/Proc.vhd
+Z96 FC:/tp_final_dl/Proc.vhd
+l0
+L10
+Z97 V@[e:EPQaMo::hALjMH7[:3
+R24
+32
+R28
+R29
+Z98 !s100 kHeH>KhaDHa9MITe81_3=3
+Z99 !s108 1575296476.115000
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/Proc.vhd|
+Z101 !s107 C:/tp_final_dl/Proc.vhd|
+Erom_prog
+R15
+R44
+R17
+R18
+R19
+R20
+Z102 8C:/tp_final_dl/rom_prog.vhd
+Z103 FC:/tp_final_dl/rom_prog.vhd
+l0
+L6
+Z104 VY@TEShI5^XUiU=Q`c^[R81
+R24
+32
+Z105 !s108 1575313201.263000
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/rom_prog.vhd|
+Z107 !s107 C:/tp_final_dl/rom_prog.vhd|
+R28
+R29
+Z108 !s100 DVJAamZ=8;1l]F[cVl5S;1
+Abehavioral
+R44
+R17
+R18
+R19
+Z109 DEx4 work 8 rom_prog 0 22 Y@TEShI5^XUiU=Q`c^[R81
+l33
+L11
+Z110 V2MJLCn`4gMAA428damlz61
+R24
+32
+R105
+R106
+R107
+R28
+R29
+Z111 !s100 [`<0L2BK@`@o::8RWN>I40
+Erom_prog_tb
+Z112 w1575313685
+R17
+R44
+R18
+R19
+R20
+Z113 8C:/tp_final_dl/rom_prog_tb.vhd
+Z114 FC:/tp_final_dl/rom_prog_tb.vhd
+l0
+L11
+Z115 V`ZcniJ=L_9MoRkY?bAm6T3
+R24
+32
+Z116 !s108 1575313705.813000
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/tp_final_dl/rom_prog_tb.vhd|
+Z118 !s107 C:/tp_final_dl/rom_prog_tb.vhd|
+R28
+R29
+Z119 !s100 o87VViR_3nFUfc>Zj4f762
+Atp_final
+R17
+R44
+R18
+R19
+Z120 DEx4 work 11 rom_prog_tb 0 22 `ZcniJ=L_9MoRkY?bAm6T3
+l29
+L15
+Z121 VOd];jKiaiPJ@F63:WZLDf3
+R24
+32
+R116
+R117
+R118
+R28
+R29
+Z122 !s100 X?6ldM:^M[CVUYeS>geUE3

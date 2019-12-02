@@ -1,0 +1,244 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech_10.0d\examples
+T_opt
+Z1 VISCJo;JKZY4J9m_ikfP[^3
+Z2 04 6 8 work ALU_TB TEST_ALU 1
+Z3 =2-5404a6b0d865-5de47508-a4-710
+Z4 o-quiet -auto_acc_if_foreign -work disenio_logico +acc
+Z5 n@_opt
+Z6 OE;O;10.0d;49
+Z7 dC:\modeltech_10.0d\examples
+T_opt1
+Z8 Vg1S:86jT_jMP1j^m=H[Jn1
+Z9 04 6 3 work alu_tb bev 1
+Z10 =1-5404a6b0d865-5de46e3e-13d-1d30
+R4
+Z11 n@_opt1
+R6
+R7
+T_opt2
+Z12 V^0>dIiF9RBcfJET0<On6d1
+Z13 04 2 8 work pc beh_proc 1
+Z14 =1-5404a6b0d865-5de47731-f0-22dc
+Z15 o-quiet -auto_acc_if_foreign -work disenio_logico
+Z16 n@_opt2
+R6
+R7
+Ealu
+Z17 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+Z18 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z19 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z20 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+32
+Z21 w1575071137
+Z22 dC:\tp_final_dl
+Z23 8C:\tp_final_dl\alu.vhd
+Z24 FC:\tp_final_dl\alu.vhd
+l0
+L6
+Z25 V08OK4<S6]6F@N>ZIFhKmB3
+Z26 OE;C;10.0d;49
+Z27 !s108 1575074132.798000
+Z28 !s90 -reportprogress|300|-work|disenio_logico|-2002|-explicit|-vopt|C:\tp_final_dl\alu.vhd|
+Z29 !s107 C:\tp_final_dl\alu.vhd|
+Z30 o-work disenio_logico -2002 -explicit
+Z31 tExplicit 1
+Z32 !s100 XjQ_P2lL5L`oD_9HD>ko;3
+Abehavioral
+R17
+R18
+R19
+R20
+Z33 DEx4 work 3 alu 0 22 08OK4<S6]6F@N>ZIFhKmB3
+32
+l15
+L13
+Z34 VTdz6W:Y0;BJV`8G6OKFDb3
+R26
+R27
+R28
+R29
+R30
+R31
+Z35 !s100 LBeE=77=o3DzGJQ@P8PA=1
+Ealu_tb
+Z36 w1575253061
+R19
+R20
+R22
+Z37 8C:\tp_final_dl\alu_testbench.vhd
+Z38 FC:\tp_final_dl\alu_testbench.vhd
+l0
+L6
+Z39 VnYJ@]Nbi5P3AW3ho0>ffQ1
+R26
+32
+Z40 !s108 1575253218.290000
+Z41 !s90 -reportprogress|300|-work|disenio_logico|-2002|-explicit|C:\tp_final_dl\alu_testbench.vhd|
+Z42 !s107 C:\tp_final_dl\alu_testbench.vhd|
+R30
+R31
+Z43 !s100 >4=:aXiZlYEB3SNNCmJG71
+Atest_alu
+R19
+R20
+Z44 DEx4 work 6 alu_tb 0 22 nYJ@]Nbi5P3AW3ho0>ffQ1
+l25
+L10
+Z45 Vz:U`GR>0:X<MZ_SjFSkAb1
+R26
+32
+R40
+R41
+R42
+R30
+R31
+Z46 !s100 IT0`9JUXmSMVlXhnh0Q1a2
+Abev
+R19
+R20
+R44
+32
+l26
+L10
+Z47 VEL[oQOUdK6jCiJKEzDePP2
+R26
+R41
+R30
+R31
+Z48 w1575251499
+R42
+Z49 !s108 1575251504.035000
+Z50 !s100 >HNH9C^FY9niMfj97eUKj3
+Eir
+R18
+Z51 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R19
+R20
+32
+Z52 w1575073774
+R22
+Z53 8C:\tp_final_dl\ir.vhd
+Z54 FC:\tp_final_dl\ir.vhd
+l0
+L6
+Z55 VYkPk[c7cBdgPWe4S9N:`G1
+R26
+Z56 !s108 1575074132.904000
+Z57 !s90 -reportprogress|300|-work|disenio_logico|-2002|-explicit|-vopt|C:\tp_final_dl\ir.vhd|
+Z58 !s107 C:\tp_final_dl\ir.vhd|
+R30
+R31
+Z59 !s100 CzZengf@[6MQPTOhkzEg]1
+Abeh_proc
+R18
+R51
+R19
+R20
+Z60 DEx4 work 2 ir 0 22 YkPk[c7cBdgPWe4S9N:`G1
+32
+l16
+L14
+Z61 VG;DPaI3;hTTknenbO]_XG1
+R26
+R56
+R57
+R58
+R30
+R31
+Z62 !s100 ^H1W7`QUDz0G0K?9nYbfj0
+Epc
+R18
+R51
+R19
+R20
+32
+R21
+R22
+Z63 8C:\tp_final_dl\pc.vhd
+Z64 FC:\tp_final_dl\pc.vhd
+l0
+L5
+Z65 VZEj7ezHQXZfBmRTKiQfFN3
+R26
+Z66 !s108 1575074133.012000
+Z67 !s90 -reportprogress|300|-work|disenio_logico|-2002|-explicit|-vopt|C:\tp_final_dl\pc.vhd|
+Z68 !s107 C:\tp_final_dl\pc.vhd|
+R30
+R31
+Z69 !s100 BL9^U7o@XY__H1NWD`ijQ2
+Abeh_proc
+R18
+R51
+R19
+R20
+Z70 DEx4 work 2 pc 0 22 ZEj7ezHQXZfBmRTKiQfFN3
+32
+l13
+L10
+Z71 V^<YdMekXW8W4cHJT7iQ6A3
+R26
+R66
+R67
+R68
+R30
+R31
+Z72 !s100 Cl1zHo;K6:cQAb8_ei<EH1
+Eproc
+R19
+R20
+32
+R21
+R22
+Z73 8C:/tp_final_dl/Proc.vhd
+Z74 FC:/tp_final_dl/Proc.vhd
+l0
+L10
+Z75 V7VaJIk9nH6;6lG3Z_z;^P3
+R26
+R30
+R31
+Z76 !s100 kHeH>KhaDHa9MITe81_3=3
+Z77 !s108 1575074133.118000
+Z78 !s90 -reportprogress|300|-work|disenio_logico|-2002|-explicit|-vopt|C:/tp_final_dl/Proc.vhd|
+Z79 !s107 C:/tp_final_dl/Proc.vhd|
+Erom_prog
+R51
+R18
+R19
+R20
+32
+R21
+R22
+Z80 8C:\tp_final_dl\rom_prog.vhd
+Z81 FC:\tp_final_dl\rom_prog.vhd
+l0
+L6
+Z82 VI:QCdhckZ@?J:o8XLNj[Z2
+R26
+Z83 !s108 1575074133.204000
+Z84 !s90 -reportprogress|300|-work|disenio_logico|-2002|-explicit|-vopt|C:\tp_final_dl\rom_prog.vhd|
+Z85 !s107 C:\tp_final_dl\rom_prog.vhd|
+R30
+R31
+Z86 !s100 DVJAamZ=8;1l]F[cVl5S;1
+Abehavioral
+R51
+R18
+R19
+R20
+Z87 DEx4 work 8 rom_prog 0 22 I:QCdhckZ@?J:o8XLNj[Z2
+32
+l36
+L11
+Z88 V];l7AoG74@WzNRXe6_Lz21
+R26
+R83
+R84
+R85
+R30
+R31
+Z89 !s100 ]<a60W?LW@`I<:go<S<Q;0

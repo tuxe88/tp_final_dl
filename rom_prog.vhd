@@ -13,24 +13,21 @@ architecture Behavioral of rom_prog is
 type rom is array (0 to 127) of std_logic_vector (15 downto 0);
 
 constant memoria: rom:=(
----/*		CARGAR CON LAS INSTRUCCIONES DEL TP
----		X"0131502a",
----		X"1140000c",
----		X"01280018",
----		X"00005812",
----		X"020b5820",
----		X"8d6b0000",
----		X"024b602a",
----		X"11800001",
----		X"000b9020",
----		X"0173602a",
----		X"11800001",
----		X"000b9820",
----		X"21290001",
----		X"0810001c",
----		X"00121020",
----		X"00131820",
----*/			
+		X"0130",
+		X"0404",
+		X"1043",
+		X"1154",
+		X"1364",
+		X"1270",
+		X"03E4",
+		X"0203",
+		X"0204",
+		X"0205",
+		X"0206",
+		X"0207",
+		X"0208",
+		X"020D",
+		X"020E",
 		others => X"0000");
 
 begin

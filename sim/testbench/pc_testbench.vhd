@@ -37,7 +37,8 @@ begin
                rst => reset,
                o => o);
 
-   -- TestBench	
+   -- TestBench
+   
    Pclk: process 
    begin
       clock <= '0';

@@ -3,4 +3,6 @@ ir.vhd.bak
 tp_final_dl.cr.mti
 tp_final_dl.mti
 vsim.wlf
-.disenio_logico/*
+tp_final_dl.mpf
+disenio_logico/*
+work/*

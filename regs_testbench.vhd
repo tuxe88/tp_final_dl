@@ -21,12 +21,14 @@ architecture tp_final of regs_tb is
             dout : out  STD_LOGIC_VECTOR (7 downto 0));
    end component;
    
-   -- SeÃ±ales de estÃ­mulo
-   signal clk_signal, rst_signal, we_signal: STD_LOGIC;
-   signal rd_signal, rs_signal: STD_LOGIC_VECTOR (3 downto 0);
-   signal din_signal: STD_LOGIC_VECTOR (7 downto 0);
+   -- Señales de estimulo
+   signal clk_signal, rst_signal, we_signal: STD_LOGIC := '0';
+   signal rd_signal, rs_signal: STD_LOGIC_VECTOR (3 downto 0) := "0000";
+   signal din_signal: STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+   constant delay: time:= 7 ns;
+   constant tper: time:= 10 ns;
           
-   -- SeÃ±ales a observar
+   -- Señales a observar
    signal dout_signal: STD_LOGIC_VECTOR (7 downto 0);
    
 begin
@@ -42,10 +44,83 @@ begin
                dout => dout_signal);
 
 -- TestBench
+--proceso de clock
+Pclk: process 
+   begin
+      clk_signal <= '0';
+      wait for tper/2;
+      clk_signal <= '1';
+      wait for tper/2;
+   end process;
+   
+--proceso de reset del registro
+--PRst: process 
+--  begin
+--      rst_signal <= '1'; 
+--      wait for delay;
+--      rst_signal <= '0';
+--      wait for 100*delay;
+--      rst_signal <= '1';
+--      wait for 10*delay;
+--      rst_signal <= '0';        
+--      wait;
+--   end process; 
+
 process
   begin
-  
-  --falta implementar
+    
+    -- Test reset reg
+    --seteo un valor en r3
+    we_signal<='1';
+    din_signal<="10101010";
+    rd_signal <="0011";
+    rs_signal <="0011";
+    rst_signal <='0';
+    WAIT FOR 100 ns;
+    we_signal<='0';
+    din_signal<="00000000";
+    rd_signal <="0011";
+    rs_signal <="0011";
+    rst_signal <='0';
+    WAIT FOR 100 ns;
+    if (dout_signal = "10101010") then 
+      report "Valor a resetear guardado exitosamente en 3r" severity note;
+	  else
+		  assert false report "Error guardando valor a resetear en r3" severity error;
+	  end if;
+    rst_signal <= '1';
+    wait for 100 ns;
+    if (dout_signal = "00000000") then 
+      report "Reset exitoso" severity note;
+	  else
+		  assert false report "Error en reset" severity error;
+	  end if;
+     
+    -- Test 1 reg
+    we_signal<='1';
+    din_signal<="11111111";
+    rd_signal <="0000";
+    rs_signal <="0000";
+    rst_signal<='0';
+    WAIT FOR 100 ns;
+    if (dout_signal = "11111111") then 
+      report "Valor 1 almacenado exitosamente" severity note;
+	  else
+		  assert false report "Error guardando valor en registro" severity error;
+	  end if;
+	  
+	  -- Vuelvo a leer r3 para asegurarme que sea x00
+    we_signal<='0';
+    din_signal<="00000000";
+    rd_signal <="0000";
+    rs_signal <="0011";
+    rst_signal<='0';
+    WAIT FOR 100 ns;
+    if (dout_signal = "00000000") then 
+      report "Valor en r3 reseteado exitosamente" severity note;
+	  else
+		  assert false report "Error en lectura de r3" severity error;
+	  end if;
 
 end process;
 

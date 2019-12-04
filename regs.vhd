@@ -28,10 +28,12 @@ begin
 
   process (clk,rst)
   begin
+    --si el reset es 1, recorro todos los registros y les seteo 0
     if rst= '1' then
       for i in 0 to reg_tam-1 loop
         reg(i) <= (others => '0');
-      end loop; 	
+      end loop;
+    --si el clock es 1 y  write enable 1 guardo el in en el registro especificado por rd
     elsif (clk'event and clk = '1') then
       if (we = '1') then
         reg(conv_integer(rd)) <= din;

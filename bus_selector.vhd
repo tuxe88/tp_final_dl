@@ -1,3 +1,12 @@
+----------------------------------------------------------------------------------
+-- TP Final diseno logico
+-- Nombre del componente: BUS SELECTOR
+-- Descripcion del componente: TODO
+-- Alumnos: Ivan Szysz, Valentin Tourrilhes
+-- Profesores Martín Vázquez, Lucas Leiva
+----------------------------------------------------------------------------------
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_Arith.ALL;

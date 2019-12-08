@@ -1,4 +1,10 @@
--- Testbench de ALU
+----------------------------------------------------------------------------------
+-- TP Final diseno logico
+-- Testbench de componente: ALU
+-- Descripcion del testbench: TODO
+-- Alumnos: Ivan Szysz, Valentin Tourrilhes
+-- Profesores Martín Vázquez, Lucas Leiva
+----------------------------------------------------------------------------------
 
 LIBRARY IEEE;
     USE IEEE.STD_LOGIC_1164.ALL;

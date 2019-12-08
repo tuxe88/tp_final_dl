@@ -1,6 +1,10 @@
---
--- TestBench para Program Counter
---
+----------------------------------------------------------------------------------
+-- TP Final diseno logico
+-- Testbench de componente: PC (Program Counter)
+-- Descripcion del testbench: TODO
+-- Alumnos: Ivan Szysz, Valentin Tourrilhes
+-- Profesores Martín Vázquez, Lucas Leiva
+----------------------------------------------------------------------------------
 
 
 library ieee;

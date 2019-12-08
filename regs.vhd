@@ -1,3 +1,11 @@
+----------------------------------------------------------------------------------
+-- TP Final diseno logico
+-- Nombre del componente: Banco de 16 registros de 8 bits cada uno (Regs)
+-- Descripcion del componente: TODO
+-- Alumnos: Ivan Szysz, Valentin Tourrilhes
+-- Profesores Martín Vázquez, Lucas Leiva
+----------------------------------------------------------------------------------
+
 library IEEE;
 
 use IEEE.STD_LOGIC_1164.ALL;

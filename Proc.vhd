@@ -1,7 +1,9 @@
 ----------------------------------------------------------------------------------
--- Realizado por la catedra  Diseño Lógico (UNTREF) en 2015
--- Tiene como objeto brindarle a los alumnos un template del procesador requerido
--- Profesores Martín Vázquez - Lucas Leiva
+-- TP Final diseno logico
+-- Nombre del componente: Procesador
+-- Descripcion del componente: TODO
+-- Alumnos: Ivan Szysz, Valentin Tourrilhes
+-- Profesores Martín Vázquez, Lucas Leiva
 ----------------------------------------------------------------------------------
 
 library IEEE;

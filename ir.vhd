@@ -1,3 +1,12 @@
+----------------------------------------------------------------------------------
+-- TP Final diseno logico
+-- Nombre del componente: IR (Instructions register)
+-- Descripcion del componente: TODO
+-- Alumnos: Ivan Szysz, Valentin Tourrilhes
+-- Profesores Martín Vázquez, Lucas Leiva
+----------------------------------------------------------------------------------
+
+
 library ieee;
 use ieee.std_logic_1164.ALL;
 use ieee.std_logic_unsigned.ALL;

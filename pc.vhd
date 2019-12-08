@@ -1,3 +1,12 @@
+----------------------------------------------------------------------------------
+-- TP Final diseno logico
+-- Nombre del componente: PC (Program Counter)
+-- Descripcion del componente: TODO
+-- Alumnos: Ivan Szysz, Valentin Tourrilhes
+-- Profesores Martín Vázquez, Lucas Leiva
+----------------------------------------------------------------------------------
+
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;

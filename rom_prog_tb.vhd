@@ -1,6 +1,10 @@
---
--- TestBench para Program Counter
---
+----------------------------------------------------------------------------------
+-- TP Final diseno logico
+-- Testbench de componente: ROM (Read Only Memory)
+-- Descripcion del testbench: TODO
+-- Alumnos: Ivan Szysz, Valentin Tourrilhes
+-- Profesores Martín Vázquez, Lucas Leiva
+----------------------------------------------------------------------------------
 
 library ieee;
 use ieee.std_logic_1164.ALL;

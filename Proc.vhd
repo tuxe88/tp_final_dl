@@ -19,13 +19,13 @@ end Proc;
 architecture Beh_Proc of Proc is
 
 -- ================
--- Declaracion de los componentes utilziados
+-- Declaracion de los componentes usados
 
 -- program counter (PC)
 component pc 
     Port ( clk : in  std_logic;
            rst : in  std_logic;
-           o : out  std_logic_vector (7 downto 0)
+           o : out  std_logic_vector (6 downto 0)
     );
 end component;
 
@@ -102,6 +102,10 @@ end component;
 
 -- declaracion de seniales utilizadas 
 
+--seniales del proc
+signal input_proc: std_logic_vector(7 downto 0);
+signal output_proc: std_logic_vector(7 downto 0);
+
 -- seniales de PC
 signal o_pc: std_logic_vector(6 downto 0);
 
@@ -154,46 +158,80 @@ begin
 -- ================
 -- Instaciacion de componentes utilziados
  
+-- PC
+ePC: pc Port map(
+  clk => clk,
+  rst => rst,
+  o => o_pc
+);
 
--- Banco de registros
-eregs:  regs Port map (clk => clk, rst => rst, we => we_regs, 
-								rd => rd_regs, rs => rs_regs, 
-								din =>din_regs, dout =>dout_regs ); -- hay que cpmpletar esta instanciación
--- ALU
-eAlu: alu port map (a => a_alu,
-                    b => b_alu,
-                    op => op_alu,
-                    s => s_alu);
 
 -- ROM
-eROM_Prog: rom_prog port map (addr => addr_rom,
-                              output => output_rom);
+eROM_Prog: rom_prog port map (
+  addr => o_pc,  --la senial de entrada de la rom es la salida del PC
+  output => output_rom
+);
+
+-- IR
+eIR: ir port map (
+  clk => clk,
+  rst => rst,
+  input => output_rom,
+  output => output_ir
+);
 
 -- El decodificador de la instrucción
-eDecode: decode port map (input => input_decode,
+eDecode: decode port map (input => output_ir(15 downto 8),
                           out_we => out_we_decode,
                           reg_we => reg_we_decode,
                           reg_a_we => reg_a_we_decode,
                           alu_op => alu_op_decode,
-                          bus_sel => bus_sel_decode);
+                          bus_sel => bus_sel_decode
+                );
 
--- ================
+-- BUS SELECTOR
+eBusSelector: bus_selector port map (
+  bus_sel => bus_sel_decode,
+  in_0 => dout_regs,
+  in_1 => output_ir(7 downto 0),
+  in_2 => input_proc,
+  out_0 => out_0_bus_sel
+);
 
+-- Banco de registros
+eregs:  regs Port map (
+                clk => clk,
+                rst => rst,
+                we => reg_we_decode, 
+								rd => output_ir(3 downto 0),
+								rs => output_ir(7 downto 4), 
+								din =>din_regs,
+								dout =>dout_regs
+						 ); 
 
--- ================
--- Descripción de mux que funciona como "bus"
--- controlado por bus_sel
+-- regA
+eRegA: reg_8b port map (
+                    clk => clk,
+                    rst => rst,
+                    we => reg_a_we_decode,
+                    din => out_0_bus_sel,
+                    dout => dout_reg_a
+              );
 
--- ================
+-- regOut
+eRegOut: reg_8b port map (
+                    clk => clk,
+                    rst => rst,
+                    we => out_we_decode,
+                    din => s_alu,
+                    dout => output_proc
+              );
 
-
--- ================
--- Descripción de los almacenamientos
--- Los almacenamientos que se deben decribir aca son: 
--- <reg_a> 8 bits
--- <reg_out> de 8 bits
--- <pc> de 8 bits
--- <ir> de 16 bits
+-- ALU
+eAlu: alu port map (a => out_0_bus_sel,
+                    b => dout_reg_a,
+                    op => alu_op_decode,
+                    s => s_alu);
 
 	process (clk, rst)
 	

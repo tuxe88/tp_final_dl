@@ -102,54 +102,37 @@ end component;
 
 -- declaracion de seniales utilizadas 
 
---seniales del proc
-signal input_proc: std_logic_vector(7 downto 0);
-signal output_proc: std_logic_vector(7 downto 0);
-
 -- seniales de PC
 signal o_pc: std_logic_vector(6 downto 0);
 
 -- seniales de ROM PROG
-signal addr_rom : std_logic_vector(6 downto 0):="0000000";
-signal output_rom : std_logic_vector(15 downto 0):="0000000000000000";
+signal output_rom : std_logic_vector(15 downto 0);
 
 --seniales de IR
-signal input_ir: std_logic_vector(15 downto 0);
 signal output_ir: std_logic_vector(15 downto 0); 
 
 -- seniales de DECODE UNIT
-signal input_decode : std_logic_vector(7 downto 0):="00000000";
-signal out_we_decode : std_logic := '0';
-signal reg_we_decode : std_logic := '0';
-signal reg_a_we_decode : std_logic := '0';
-signal alu_op_decode : std_logic_vector(2 downto 0):="000";
-signal bus_sel_decode : std_logic_vector(1 downto 0):="00";
+signal out_we_decode : std_logic;
+signal reg_we_decode : std_logic;
+signal reg_a_we_decode : std_logic;
+signal alu_op_decode : std_logic_vector(2 downto 0);
+signal bus_sel_decode : std_logic_vector(1 downto 0);
 
 --seniales de bus_selector
-signal bus_sel: std_logic_vector(1 downto 0);
-signal in_0_bus_sel: std_logic_vector(7 downto 0);
-signal in_1_bus_sel: std_logic_vector(7 downto 0);
-signal in_2_bus_sel: std_logic_vector(7 downto 0);
 signal out_0_bus_sel: std_logic_vector(7 downto 0); 
 
 -- seniales de banco de registros
 signal we_regs: std_logic; -- senal para escribir en el banco de registro 
-signal rd_regs, rs_regs: std_logic_vector(3 downto 0);
-signal din_regs, dout_regs: std_logic_vector(7 downto 0);
+signal dout_regs: std_logic_vector(7 downto 0);
 
 -- seniales de ALU
-signal a_alu : std_logic_vector(7 downto 0):="00000000";
-signal b_alu : std_logic_vector(7 downto 0):="00000000";
-signal op_alu :std_logic_vector(2 downto 0):="000";
 signal s_alu : std_logic_vector(7 downto 0);
 
 -- seniales de banco de reg A
-signal we_reg_a: std_logic; 
-signal din_reg_a, dout_reg_a: std_logic_vector(7 downto 0);
+signal dout_reg_a: std_logic_vector(7 downto 0);
 
 -- seniales de banco de reg out
-signal we_reg_out: std_logic; 
-signal din_reg_out, dout_reg_out: std_logic_vector(7 downto 0);
+signal dout_reg_out: std_logic_vector(7 downto 0);
 
 -- ================
 
@@ -194,20 +177,26 @@ eBusSelector: bus_selector port map (
   bus_sel => bus_sel_decode,
   in_0 => dout_regs,
   in_1 => output_ir(7 downto 0),
-  in_2 => input_proc,
+  in_2 => input,
   out_0 => out_0_bus_sel
 );
 
 -- Banco de registros
 eregs:  regs Port map (
-                clk => clk,
-                rst => rst,
-                we => reg_we_decode, 
-								rd => output_ir(3 downto 0),
-								rs => output_ir(7 downto 4), 
-								din =>din_regs,
-								dout =>dout_regs
-						 ); 
+	                clk => clk,
+	                rst => rst,
+	                we => reg_we_decode, 
+					rd => output_ir(3 downto 0),
+					rs => output_ir(7 downto 4), 
+					din =>s_alu,
+					dout =>dout_regs
+				); 
+
+-- ALU
+eAlu: alu port map (a => out_0_bus_sel,
+                    b => dout_reg_a,
+                    op => alu_op_decode,
+                    s => s_alu);
 
 -- regA
 eRegA: reg_8b port map (
@@ -224,27 +213,19 @@ eRegOut: reg_8b port map (
                     rst => rst,
                     we => out_we_decode,
                     din => s_alu,
-                    dout => output_proc
+                    dout => output
               );
-
--- ALU
-eAlu: alu port map (a => out_0_bus_sel,
-                    b => dout_reg_a,
-                    op => alu_op_decode,
-                    s => s_alu);
 
 	process (clk, rst)
 	
 	begin
-	     if (rst='1') then 
+	    if (rst='1') then 
 		  
 		  elsif (rising_edge(clk)) then
 		  
 		  end if;
 		  
 	end process;
--- ================
-
 
 end Beh_Proc;
 

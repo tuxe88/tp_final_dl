@@ -17,7 +17,7 @@ entity pc is
 end pc;
 
 architecture beh_proc of pc is 
-signal count: std_logic_vector(6 downto 0); 
+signal count: std_logic_vector(6 downto 0):="0000000"; 
 
 begin
    pc: process (clk, rst)
